@@ -38,6 +38,7 @@ public class Main
         ArrayList<String> lines = new ArrayList<>();
         while (lines.isEmpty()){ //makes the program immediately prompt the user again after potential errors
             Scanner scanner = new Scanner(System.in);
+            System.out.println("Enter a file name: ");
             String fileName = scanner.nextLine();
             try {
                 String content = new String(Files.readAllBytes(Paths.get(fileName))); //reads file into a string
